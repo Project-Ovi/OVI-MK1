@@ -23,3 +23,17 @@ The programming behind this robot stands as a testament to ingenuity and precisi
 Moreover, the application interface exudes sophistication, offering a comprehensive web interface that provides real-time insights into the robot's operations. Notably, users can seamlessly toggle its functionalities on and off. This feat is achieved through a meticulously constructed framework utilizing the TCP/IP protocol, facilitating seamless data transmission from the microcontrollers to a cutting-edge GO web server. The server, in turn, harnesses a blend of HTTP and WebSocket protocols to deliver vital information, ensuring a seamless user experience and unparalleled control over the robot's operations.
 
 ![Architecture](!assets/OVI-ARCHITECTURE.jpg)
+
+
+
+
+# Our goals
+Our mission is to revolutionize the manufacturing industry by offering cost-effective, dependable, and environmentally conscious solutions for quality control. By leveraging cutting-edge technology and innovative practices, we strive to provide accessible tools and services that empower manufacturers to enhance their processes while minimizing their environmental footprint.
+
+Through our commitment to affordability, we aim to democratize access to quality control measures, ensuring that even small and medium-sized enterprises can benefit from the latest advancements without breaking the bank. Our solutions prioritize reliability, guaranteeing consistent performance and accuracy to meet the rigorous standards of modern manufacturing.
+
+Moreover, our eco-friendly approach reflects our dedication to sustainability. We prioritize the development of products and processes that reduce waste, energy consumption, and pollution, aligning with the growing global imperative for greener industrial practices.
+
+In essence, we envision a future where manufacturers of all sizes can thrive, armed with cost-effective, dependable, and environmentally friendly solutions for quality control. By championing accessibility, reliability, and sustainability, we aim to catalyze positive change within the manufacturing industry, fostering growth, innovation, and a healthier planet for generations to come.
+
+
