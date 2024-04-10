@@ -1,0 +1,59 @@
+#############################################################################################
+#                                  Robot Calibration Settings                               #
+#                                                                                           #
+#!                       IMPORTANT: PLEASE READ BEFORE MAKING ANY CHANGES                   #
+#                                                                                           #
+#                                                                                           #
+# Organization: OVI Robotics                                                                #
+# Project: OVI MK1                                                                          #
+#                                                                                           #
+#                                                                                           #
+# This YAML file contains crucial calibrations for the robot.                               #
+# Any modifications should be carefully reviewed and validated.                             #
+# Incorrect settings can lead to unexpected behavior or damage to the equipment.            #
+#                                                                                           #
+# Once adjustments are made, ensure that all team members are informed.                     #
+# Please proceed with caution.                                                              #
+#                                                                                           #
+#############################################################################################
+
+
+
+## When enabled, the calibrations are continuously updated
+## It is recommended to turn this off when not necessary
+#! HEAVY PERFORMANCE IMPACT
+active_debugging: true
+
+hardware:
+  - rotation:
+    - steps: 100      # No of steps to be made in the time interval
+    - time:  100000   # In micros
+    - Vin:   12.0     # In Volts
+    - Vout:  3.5      # In volts
+    - limit: false    # How many times can this movement be executed before we exceed a hardware limitations, false to disable
+
+  - uplift:
+    - steps: 100      # No of steps to be made in the time interval
+    - time:  100000   # In micros
+    - Vin:   12.0     # In Volts
+    - Vout:  12.0     # In Volts
+    - limit: 250      # How many times can this movement be executed before we exceed a hardware limitations, false to disable
+
+  - extend:
+    - steps: 100      # No of steps to be made in the time interval
+    - time:  100000   # In micros
+    - Vin:   12.0     # In Volts
+    - Vout:  12.0     # In Volts
+    - limit: 250      # How many times can this movement be executed before we exceed a hardware limitations, false to disable
+
+software:
+  # Deviation is calculated with the following formula:
+  # avg = (camera_width + camera_height) / 2
+  # deviation = distance_from_point / avg * 100
+  - max_deviation: 5.0
+
+  # By default, the algorithm expects that the arm is in the center of the image
+  # center_offset offsets that center by a PERCENTAGE in either the x or the y axis
+  - center_offset:
+    - x: 0.0 # In percentages
+    - y: 0.0 # In percentages

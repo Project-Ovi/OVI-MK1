@@ -1,0 +1,4 @@
+Background: rgb(23, 24, 39)
+Foreground: rgb(29, 34, 73)
+Shadows: rgb(39, 89, 165)
+Accent: rgb(255, 144, 0)
