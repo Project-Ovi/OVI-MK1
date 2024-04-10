@@ -7,6 +7,9 @@ As production demands surge, factories are tasked with producing goods at an eve
 ## Our goal
 At OVI Robotics, we've developed an advanced system employing computer vision to recognize objects by colour and relocate them precisely. Our focus is on creating a reliable solution for sorting goods and maintaining quality control. We believe in the power of innovation to address real-world challenges efficiently. Our technology aims to streamline processes and minimize errors, offering industries a dependable tool for optimizing operations. With adaptability at its core, our system can cater to various sectors, promising enhanced efficiency and productivity. At OVI Robotics, we're committed to delivering practical, cutting-edge solutions that drive positive change in the world of automation.
 
+
+
+
 # Inner workings
 ## Mechanical level
 Our product showcases a dynamic design featuring two potent linear actuators, each delivering an impressive force of 1kN, stationed on a sturdy yet eco-friendly wooden platform, and maneuvered by a reliable motor. Adding to its functionality, the robotic arm is equipped with a high-quality gripper crafted from durable polylactide material, driven by a precise 9g servo motor. This amalgamation of robust components underscores our dedication to efficiency and reliability, ensuring optimal performance in various applications.
@@ -19,4 +22,4 @@ The programming behind this robot stands as a testament to ingenuity and precisi
 
 Moreover, the application interface exudes sophistication, offering a comprehensive web interface that provides real-time insights into the robot's operations. Notably, users can seamlessly toggle its functionalities on and off. This feat is achieved through a meticulously constructed framework utilizing the TCP/IP protocol, facilitating seamless data transmission from the microcontrollers to a cutting-edge GO web server. The server, in turn, harnesses a blend of HTTP and WebSocket protocols to deliver vital information, ensuring a seamless user experience and unparalleled control over the robot's operations.
 
-[Architecture](!assets/OVI-ARCHITECTURE.jpg)
+![Architecture](!assets/OVI-ARCHITECTURE.jpg)
