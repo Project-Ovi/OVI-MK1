@@ -29,9 +29,11 @@ class Arm():
         The index of the command in the array defines the id of the slave wich should receive the command"""
         toSend = ">"
         for i in commands:
+            if i == "":
+                i = "::"
             toSend += i
             if i != commands[-1]:
-                toSend += "|"
+                toSend += ":"
         toSend += "<"
         
         self.message(toSend)

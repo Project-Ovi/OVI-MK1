@@ -307,12 +307,21 @@ if __name__ == '__main__':
             else:
                 if Cx.value == 0 and Cy.value == 0:
                     # No object found, continue the search
-                    com = hardware_step("rotation", 0)
-                    rot_com = f"{com[0]}:{round(com[1])}:{round(com[2])}"
-                    arduino.slave_command(rot_com)
-                    t = (com[1]+com[2])*com[0]*1
-                    time.sleep(Convert.micros_to_sec(t))
-                    rot_index += 1
+                    if type(hardware_limit("rotation", 0)) == bool or rot_index < int(hardware_limit("rotation", 0)):
+                        com = hardware_step("rotation", 0)
+                        rot_com = f"{com[0]}:{round(com[1])}:{round(com[2])}"
+                        arduino.slave_command(rot_com)
+                        t = (com[1]+com[2])*com[0]*1
+                        time.sleep(Convert.micros_to_sec(t))
+                        rot_index += 1
+
+                    else:
+                        com = hardware_step("rotation", 0)
+                        rot_com = f"-{com[0]*hardware_limit("rotation", 0)}:{round(com[1])}:{round(com[2])}"
+                        arduino.slave_command(rot_com)
+                        t = (com[1]+com[2])*com[0]*hardware_limit("rotation", 0)
+                        time.sleep(Convert.micros_to_sec(t))
+                        rot_index = 0
                 else:
                     # Object in sight, but not alligned
                     # Rotate towards object
